@@ -1,0 +1,247 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { useState } from 'react';
+import AboutPage from './AboutPage';
+import SubmitPage from './SubmitPage';
+
+
+
+/* Tags
+
+eating
+playing
+listening
+exercising
+learning
+creating
+loving
+fighting
+working
+shopping
+gathering
+praying
+healing */
+
+
+const imagesData = [
+    {
+        id: 1,
+        imageSource: 'images/onfim.jpg',
+        description: 'Onfim, A Boy Preserved His Homework on Birch Bark, 13th Century',
+        sourceLink: 'https://historydaily.org/13th-century-boy-preserved-homework',
+        year: 1200,
+        tag: ['Childhood', 'Education', 'Writing', 'Creating']
+    },
+    {
+        id: 2,
+        imageSource: 'images/kingtutspintop.jpg',
+        description: `Wooden spintop found in tomb of King Tut, 
+    ~1300 BC`,
+        sourceLink: 'https://www.artofplay.com/blogs/stories/history-of-spinning-tops',
+        year: -1300,
+        tag: ['Childhood', 'Playing', 'Praying']
+    },
+    {
+        id: 3,
+        imageSource: 'images/romanbrotheltokens.jpg',
+        description: 'Spintriae, The Roman Sex Coins That Showed What Was on The Menu, ~20-40 AD',
+        sourceLink: 'https://www.ancient-origins.net/artifacts-other-artifacts/pompeii-brothel-mural-009544',
+        year: 20,
+        tag: ['Sex', 'Money', 'Art', 'Shopping', 'Loving']
+    },
+    {
+        id: 4,
+        imageSource: 'images/Salmahwrotethis.png',
+        description: 'Arabic graffiti saying "Salmah wrote this in 23", 23 AD',
+        sourceLink: 'https://www.islamic-awareness.org/history/islam/inscriptions/muth',
+        year: 23,
+        tag: ['Writing', 'Sharing']
+    },
+    {
+        id: 5,
+        imageSource: 'images/FUuBiqcXoAArgMz.jpg',
+        description: '"Beware of Dog" Roman mosaic at the entrance to the House of the Tragic Poet in Pompeii, Italy, 2nd century BC',
+        sourceLink: 'images/FUuBiqcXoAArgMz.jpg',
+        year: -20,
+        tag: ['Art', 'Sharing']
+    },
+    {
+        id: 6,
+        imageSource: 'images/Ceramicrattle.jpg',
+        description: 'Ceramic rattle from the ancient city of Kültepe Kaniş-Karum',
+        sourceLink: 'https://digventures.com/2014/08/worlds-oldest-toy-unearthed-in-capital-of-ancient-kingdom/',
+        year: -2000,
+        tag: ['Childhood', 'Playing', 'Toy']
+    },
+    {
+        id: 7,
+        imageSource: 'images/margerybrewsletter.png',
+        description: `Oldest documented love letter in English by Margery Brews to fiancé John Paston, 1477`,
+        sourceLink: 'https://blog.myheritage.com/2011/02/oldest-love-letter-in-history/',
+        year: 1477,
+        tag: ['Loving', 'Writing']
+    },
+    {
+        id: 8,
+        imageSource: 'images/catchaseduptree.png',
+        description: 'A pen and ink illustration of a cat being chased up a tree by  a man and his dogs, late 15th century',
+        sourceLink: 'https://www.sophieellafineart.com/the-hifstory-of-pet-art',
+        year: 1400,
+        tag: ['Art', 'Creating', 'Drawing', 'Playing']
+    },
+    {
+        id: 9,
+        imageSource: 'images/zoorkhaneh.jpg',
+        description: 'Contemporary practice in a zurkhāneh, "house of strength", the oldest known style of gymnasium',
+        sourceLink: 'https://en.wikipedia.org/wiki/Pahlevani_and_zoorkhaneh_rituals',
+        year: -1000,
+        tag: ['Exercising', 'Gathering', 'Healing']
+    },
+    {
+        id: 10,
+        imageSource: 'images/oldestnewspaper.jpg',
+        description: 'The first weekly newspaper by Johann Carolus, 1605',
+        sourceLink: 'https://en.wikipedia.org/wiki/List_of_the_oldest_newspapers',
+        year: 1605,
+        tag: ['Printing', 'Sharing', 'Writing']
+    },
+    {
+        id: 11,
+        imageSource: 'images/atheniangames.jpg',
+        description: 'Terracotta skyphos (deep drinking cup) depicting ancient greek olympic games, ca. 500 B.C.',
+        sourceLink: 'https://www.metmuseum.org/perspectives/articles/2021/7/ancient-greek-olympic-games',
+        year: -500,
+        tag: ['Playing', 'Gathering', 'Exercising', 'Creating', 'Art']
+    },
+    {
+        id: 12,
+        imageSource: 'images/Shang_Ox_Scapula_Oracle_Bones_1.jpg',
+        description: `Oracle bones from Yinxu, Anyang, Henan, China, ~1250 BC`,
+        sourceLink: 'https://en.wikipedia.org/wiki/File:Shang_Ox_Scapula_Oracle_Bones_1.jpg',
+        year: -1250,
+        tag: ['Writing', 'Sharing', 'Praying', 'Learning']
+    },
+    {
+        id: 13,
+        imageSource: 'images/KaiYuanZaBaoRemake.jpg',
+        description: 'Kaiyuan Za Bao records a memorial to the throne about a new type of grape brought from the western region in the Han dynasty, which was marked as reviewed and amrked as boring by the emperor and not allowed to publish on Dibao. 713 AD ',
+        sourceLink: 'https://en.wikipedia.org/wiki/Dibao_%28ancient_Chinese_gazette%29',
+        year: 713,
+        tag: ['Sharing', 'Writing']
+    },
+    {
+        id: 14,
+        imageSource: 'images/neanderthalflute.png',
+        description: 'The Neanderthal Flute, found in the cave of Divje Babe in Slovenia, is thought to date back at least 50,000 years, making it the oldest known musical instrument in the world.',
+        sourceLink: 'https://www.nms.si/en/collections/highlights/343-Neanderthal-flute',
+        year: -48000,
+        tag: ['Music', 'Playing', 'Creating', 'Sharing']
+    },
+    {
+        id: 15,
+        imageSource: 'images/picassoeatingfish.jpg',
+        description: 'Picasso eating a fish, 1957',
+        sourceLink: 'https://www.bbc.co.uk/programmes/articles/5lk8LL9kK3Zrwd6hfkk0bBl/a-feast-for-the-eyes-what-picassos-kitchen-reveals-about-his-art',
+        year: 1957,
+        tag: ['Eating', 'Art', 'Creating']
+    },
+];
+
+const renderCard = (card) => (
+    <div key={card.id} className="image-card">
+        <img src={card.imageSource} alt="Image" />
+        <p>{card.description}</p>
+        <a className="source-link" href={card.sourceLink} target="_blank">Source</a>
+        <p className="years" >{card.year} </p>
+    </div>
+)
+
+const Cards = ({ cards, orderBy }) => {
+    let orderedCards = cards.slice(0);
+
+    if (orderBy === "date") {
+        orderedCards.sort((a, b) => a.year - b.year);
+    }
+
+    return (
+        <div className="image-grid">
+            {orderedCards.map(renderCard)}
+        </div>
+    );
+};
+
+const HomePage = () => {
+    const tags = ['Playing', 'Loving', 'Gathering', 'Praying', 'Creating', 'Sharing', 'Writing', 'Eating'];
+
+    const [selectedTag, setSelectedTag] = useState('');
+
+    const filterCards = (tag) => {
+        if (selectedTag === tag) {
+            setSelectedTag('');
+        } else {
+            setSelectedTag(tag);
+        }
+    };
+
+    const filteredCards = selectedTag ? imagesData.filter((card) => card.tag.includes(selectedTag)) : imagesData;
+
+    return (
+        <div>
+            <div className="tags">
+                {tags.map((tag) => (
+                    <li className="main-tags" key={tag}>
+                        <button
+                            onClick={() => filterCards(tag)}
+                            className={selectedTag === tag ? 'selected' : ''}
+                        >
+                            {tag}
+                        </button>
+                    </li>
+                ))}
+            </div>
+            <Cards cards={filteredCards} orderBy="date" />
+        </div>
+    );
+};
+
+
+const App = () => {
+    return (
+        <div className="app">
+            <Router>
+                <header>
+                    <h1> <a className="title" href="./" target="_self"> Humaning Archive</a> </h1>
+                    {/* <h1>Humaning Archive</h1> */}
+                    {/* <nav>
+            <ul>
+              <li>
+                <Link to="/" className='linkstyle' id='home'>Home</Link>
+              </li>
+              <li>
+                <Link to="/about" className='linkstyle'>About</Link>
+              </li>
+              <li>Contact</li>
+            </ul>
+          </nav> */}
+                    <body>
+                        <p class="about"> Humaning Archive is a place to explore and log examples of human behavior across history. There's no strict framework for it, just whatever feels particularly human. </p>
+                        <p class="about" > Made by Jenny Hu. </p>
+                        <p class="about" > Submit a post <a href="./submit" target="_self"> here</a>. </p>
+                    </body>
+                </header>
+                <main className='main-content'>
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/about" element={<AboutPage />} />
+                        <Route path="/submit" element={<SubmitPage />} />
+                    </Routes>
+                </main>
+                <footer>
+                    &copy; {new Date().getFullYear()} Humaning Archive. All rights reserved.
+                </footer>
+            </Router>
+        </div>
+    );
+};
+
+export default App;

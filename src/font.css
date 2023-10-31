@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'Director-Regular';
+    src: local('Director-Regular'),
+        url('./fonts/Director-Regular.otf') format('otf'),
+}
