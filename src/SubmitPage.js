@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const SubmitPage = () => {
     const [image, setImage] = useState(null);
     const [description, setDescription] = useState('');
-    const [date, setDate] = useState('');
+    const [year, setDate] = useState('');
     const [sourceLink, setSourceLink] = useState('');
 
     const handleImageChange = (e) => {
@@ -30,8 +30,8 @@ const SubmitPage = () => {
                     <textarea id="description" value={description} onChange={(e) => setDescription(e.target.value)} />
                 </div>
                 <div>
-                    <label htmlFor="date">Date:</label>
-                    <input type="text" id="date" value={date} onChange={(e) => setDate(e.target.value)} />
+                    <label htmlFor="year">Date:</label>
+                    <input type="text" id="year" value={year} onChange={(e) => setDate(e.target.value)} />
                 </div>
                 <div>
                     <label htmlFor="sourceLink">Source Link:</label>

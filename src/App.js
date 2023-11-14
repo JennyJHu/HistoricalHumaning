@@ -259,54 +259,372 @@ const imagesData = [
     year: 400,
     tag: ['Praying', 'Healing']
   },
+  {
+    id: 30,
+    imageSource: 'images/amazon_rock_faces.jpg',
+    description: "Human faces sculpted into stone up to 2,000 years ago have appeared on a rocky outcropping along the Amazon River since water levels dropped to record lows in the region’s worst drought in more than a century.",
+    sourceLink: 'https://www.aljazeera.com/gallery/2023/10/25/amazon-drought-exposes-ancient-rock-carvings',
+    year: 500,
+    tag: ['Playing', 'Creating', 'Art']
+  },
+  {
+    id: 31,
+    imageSource: 'images/Immortal_beloved_letter_1.jpg',
+    description: "Love letter addressed to an unknown lover from Ludwig van Beethoven.",
+    sourceLink: 'https://en.wikipedia.org/wiki/Immortal_Beloved',
+    year: 1812,
+    tag: ['Writing', 'Loving']
+  },
+  {
+    id: 32,
+    imageSource: 'images/vintage_grocery_list.jpg',
+    description: "A vintage metal shopping list dating back to the 1940s (pictured), which can be reused,  has ignited amazement online.",
+    sourceLink: 'https://www.dailymail.co.uk/news/article-9477149/Vintage-80-year-old-mechanical-shopping-list-baffles-Facebook-users.html',
+    year: 1940,
+    tag: ['Writing', 'Sharing', 'Eating']
+  },
+  {
+    id: 33,
+    imageSource: 'images/MichelangelosGroceries.jpg',
+    description: "Michelaneglo's grocery list, 1518",
+    sourceLink: 'https://www.openculture.com/2013/12/michelangelos-illustrated-grocery-list.html',
+    year: 1518,
+    tag: ['Writing', 'Sharing', 'Eating', 'Art']
+  },
+  {
+    id: 34,
+    imageSource: 'images/medievalrockstars.jpg',
+    description: "Medieval rockstar doodles from the 9th century.",
+    sourceLink: 'https://www.amusingplanet.com/2014/10/historian-discovers-800-year-old.html',
+    year: 800,
+    tag: ['Art', 'Creating', 'Playing']
+  },
+  {
+    id: 35,
+    imageSource: 'images/pen_trials.jpg',
+    description: "Pen trials from Oxford, Bodleian Library, Lat. misc. c. 66 (15th century).",
+    sourceLink: 'https://www.amusingplanet.com/2014/10/historian-discovers-800-year-old.html',
+    year: 1400,
+    tag: ['Art', 'Creating', 'Playing']
+  },
+  {
+    id: 36,
+    imageSource: 'images/bidet-antique.jpg',
+    description: "An 18th Century Bidet.",
+    sourceLink: 'https://colonialquills.blogspot.com/2019/08/18th-century-hygiene-part-2-bathing.html',
+    year: 1700,
+    tag: ['Cleansing']
+  },
+  {
+    id: 37,
+    imageSource: 'images/charlemagne_playing_chess.jpg',
+    description: "Charlemagne playing chess with Garin. British Library MS Royal 20 D XI f. 1 (14th century image).",
+    sourceLink: 'https://www.warsoftheroses.com/age-groups/ages-7-11/medieval-games/',
+    year: 1300,
+    tag: ['Playing', 'Gathering']
+  },
+  {
+    id: 38,
+    imageSource: 'images/qigong.jpg',
+    description: "The Daoyin Tu, the oldest physical exercise chart, depicting Qi Gong.",
+    sourceLink: 'http://www.shen-nong.com/eng/lifestyles/chinese_qi_gong_history.html',
+    year: -168,
+    tag: ['Gathering', 'Exercising', 'Healing']
+  },
+  {
+    id: 39,
+    imageSource: 'images/prehistoric-pipe.jpg',
+    description: "A prehistoric Catlinite pipe, probably Ioway, from the protohistoric Wamampito Site, Bremer County, Iowa.",
+    sourceLink: 'https://en.wikipedia.org/wiki/Pipe_smoking',
+    year: 1700,
+    tag: ['Loving']
+  },
+  {
+    id: 40,
+    imageSource: 'images/nero-banquet.jpg',
+    description: "The Roman Emperor Nero was known to hold lavish banquets.",
+    sourceLink: 'https://www.ranker.com/list/biggest-banquets-in-history/bridget-quinlivan',
+    year: 68,
+    tag: ['Eating', 'Gathering']
+  },
+  {
+    id: 41,
+    imageSource: 'images/roman-glass-cameo.jpg',
+    description: "Roman decorative arts include subjects that are of an explicit sexual nature.",
+    sourceLink: 'https://www.metmuseum.org/art/collection/search/245495',
+    year: 50,
+    tag: ['Loving', 'Art', 'Gathering']
+  },
+  {
+    id: 42,
+    imageSource: 'images/ancient-roman-spork.jpg',
+    description: "Ancient Roman Spork.",
+    sourceLink: 'https://www.metmuseum.org/art/collection/search/257863',
+    year: 250,
+    tag: ['Eating']
+  },
+  {
+    id: 43,
+    imageSource: 'images/ancient-relief-block-cooking.jpg',
+    description: "Relief block depicting plucking and roasting fowl and herds crossing water.",
+    sourceLink: 'https://www.metmuseum.org/art/collection/search/546098',
+    year: -1952,
+    tag: ['Eating', 'Gathering']
+  },
+  {
+    id: 44,
+    imageSource: 'images/rosary.jpg',
+    description: "A rosary from 1475 to 1500, Germany.",
+    sourceLink: 'https://en.wikipedia.org/wiki/History_of_the_Rosary',
+    year: 1500,
+    tag: ['Praying']
+  },
+  {
+    id: 45,
+    imageSource: 'images/Pandora-fashion-doll.jpg',
+    description: "Pandora, a fashion doll of 1600.",
+    sourceLink: 'http://isiswardrobe.blogspot.com/2013/09/meet-pandora-fashion-doll-of-1600.html',
+    year: 1700,
+    tag: ['Playing']
+  },
+  {
+    id: 46,
+    imageSource: 'images/ragdoll.png',
+    description: "A Roman Ragdoll.",
+    sourceLink: 'https://www.britishmuseum.org/collection/object/G_1905-1021-13',
+    year: 500,
+    tag: ['Playing']
+  },
+  {
+    id: 47,
+    imageSource: 'images/Childrens_Puppet_Show.jpg',
+    description: "A painting by the Song- dynasty era Chinese artist. 120.3x77.2 cm ",
+    sourceLink: 'https://en.wikipedia.org/wiki/File:A_Children%27s_Puppet_Show.jpg',
+    year: 1200,
+    tag: ['Playing', 'Gathering']
+  },
+  {
+    id: 48,
+    imageSource: 'images/toy-knight.jpg',
+    description: "This bronze toy mounted knight is one of the earliest extant toy soldiers.",
+    sourceLink: 'https://art.thewalters.org/detail/27938/toy-mounted-knight/',
+    year: 1400,
+    tag: ['Playing']
+  },
+  {
+    id: 49,
+    imageSource: 'images/betrothal-ring.png',
+    description: "Medieval clasp hands betrothal ring, circa 14th-15th century.",
+    sourceLink: 'https://www.berganza.com/Medieval-clasp-hands-betrothal-ring-circa-14th-15th-century.html?feature_id=169',
+    year: 1500,
+    tag: ['Loving']
+  },
+  {
+    id: 50,
+    imageSource: 'images/byzantine-betrothal-ring.png',
+    description: "Byzantine betrothal ring, circa 7th-8th century AD.",
+    sourceLink: 'https://www.berganza.com/Byzantine-betrothal-ring-7th-8th-century-AD.html?feature_id=169',
+    year: 800,
+    tag: ['Loving', 'Praying']
+  },
+  {
+    id: 51,
+    imageSource: 'images/Athen_Akropolis.jpg',
+    description: "The theatre of Dionysus in Athens, Greece, 400 BC.",
+    sourceLink: 'https://en.wikipedia.org/wiki/Theatre_of_Dionysus',
+    year: 400,
+    tag: ['Playing', 'Gathering', 'Art', 'Creating', 'Sharing']
+  },
+  {
+    id: 52,
+    imageSource: 'images/moro-moro.png',
+    description: "Moro-moro, the earliest known form of organized theatre in the Philippines.",
+    sourceLink: 'hhttps://www.britannica.com/art/moro-moro',
+    year: 1637,
+    tag: ['Gathering', 'Playing', 'Art', 'Creating', 'Sharing']
+  },
+  {
+    id: 53,
+    imageSource: 'images/old-lunch-box.jpg',
+    description: "A 4,000 year old lunch box found in the Bernese Alps.",
+    sourceLink: 'https://www.atlasobscura.com/articles/4-000-year-old-lunch-box',
+    year: -2000,
+    tag: ['Eating']
+  },
+  {
+    id: 54,
+    imageSource: 'images/bento-box.jpg',
+    description: "An Edo period bento box.",
+    sourceLink: 'https://damien.douxchamps.net/photo/japan/kyoto/higashiyama/hanbei-fu/',
+    year: 1867,
+    tag: ['Eating']
+  },
+  {
+    id: 55,
+    imageSource: 'images/tiffin-box.png',
+    description: "First appearing in the subcontinent in the late 18th century, the Tiffin Box quickly became a staple of Indian cuisine.",
+    sourceLink: 'https://mytridesigns.com/pages/indian-tiffin-box-craft',
+    year: 1890,
+    tag: ['Eating']
+  },
+  {
+    id: 56,
+    imageSource: 'images/Kuchenmaistrey.jpg',
+    description: "A cook at the hearth with his ladle; woodcut from the first printed cookbook in German, Kuchenmaistrey, 1485.",
+    sourceLink: 'https://en.wikipedia.org/wiki/Medieval_cuisine',
+    year: 1485,
+    tag: ['Eating', 'Gathering']
+  },
+  {
+    id: 57,
+    imageSource: 'images/portrait-of-a-lady.jpg',
+    description: "A 5th–6th Century portrait of a lady.",
+    sourceLink: 'https://www.metmuseum.org/art/collection/search/329980',
+    year: 600,
+    tag: ['Art', 'Creating', 'Sharing']
+  },
+  {
+    id: 58,
+    imageSource: 'images/ancientforks.jpg',
+    description: "Eighth- to ninth-century molded bronze forks from present-day Iran.",
+    sourceLink: 'https://www.ancientpages.com/2018/06/19/troublesome-ancient-history-of-forks-started-in-tuscany-italy-in-11th-century/',
+    year: 900,
+    tag: ['Eating']
+  },
+  {
+    id: 59,
+    imageSource: 'images/oldest-chess.png',
+    description: "The oldest chess game recorded played between Abu-Bakr Muhammed Ben Yahya as-Suli and Abu’l- Faraj bin al-Muzaffar bin Sa’-id al-Lajlaj in the 10th century.",
+    sourceLink: 'https://www.chess.com/forum/view/game-showcase/the-oldest-chess-game-recorded',
+    year: 1000,
+    tag: ['Playing', 'Gathering']
+  },
+  {
+    id: 60,
+    imageSource: 'images/Ancient_Sumo_competition.jpg',
+    description: "Ancient sumo-wrestling competition from the Japanese Heian or Kamakura period (between 794 and 1333).",
+    sourceLink: 'https://en.wikipedia.org/wiki/History_of_sport',
+    year: 1333,
+    tag: ['Gathering', 'Exercising', 'Playing']
+  },
+  {
+    id: 61,
+    imageSource: 'images/philogelos.jpg',
+    description: "Philogelos, or 'Love of Laughter', is the oldest existing collection of jokes.",
+    sourceLink: 'https://en.wikipedia.org/wiki/Philogelos',
+    year: 248,
+    tag: ['Gathering', 'Playing']
+  },
+  {
+    id: 62,
+    imageSource: 'images/valdarolovers.jpeg',
+    description: "The Lovers of Valdaro, or Valdaro Lovers, are a pair of human skeletons dated as approximately 6,000 years old.",
+    sourceLink: 'https://en.wikipedia.org/wiki/Lovers_of_Valdaro',
+    year: -4000,
+    tag: ['Loving', 'Praying']
+  },
+  {
+    id: 63,
+    imageSource: 'images/Jade_cabbage_closeup.jpg',
+    description: "Jadeite Cabbage – Jin received it as part of her dowry for her wedding to Guangxu, in 1889.",
+    sourceLink: 'https://en.wikipedia.org/wiki/Dowry',
+    year: 1889,
+    tag: ['Loving', 'Sharing']
+  },
+  {
+    id: 64,
+    imageSource: 'images/medievalbath.png',
+    description: "Medieval baths were often shared and done in washbins.",
+    sourceLink: 'https://www.medievalists.net/2013/04/did-people-in-the-middle-ages-take-baths/',
+    year: 1300,
+    tag: ['Cleansing', 'Sharing', 'Gathering']
+  },
+  {
+    id: 65,
+    imageSource: 'images/surgicaltoolsfifth.jpg',
+    description: "Surgical tools, 5th century BC.",
+    sourceLink: 'https://en.wikipedia.org/wiki/Ancient_Greek_medicine',
+    year: 500,
+    tag: ['Cleansing', 'Healing']
+  },
   // {
-  //   id: 29,
-  //   imageSource: 'images/Hypo_ten_sen_eusplanchnian_(papyros).jpg',
-  //   description: "Earliest known manuscript of Sub tuum praesidium in Greek, dated between 3rd to 4th centuries.",
-  //   sourceLink: 'https://en.wikipedia.org/wiki/Sub_tuum_praesidium',
-  //   year: 400,
-  //   tag: [ 'Praying', 'Healing']
+  //   id: 63,
+  //   imageSource: 'images/Jade_cabbage_closeup.jpg',
+  //   description: "Jadeite Cabbage – Jin received it as part of her dowry for her wedding to Guangxu, in 1889.",
+  //   sourceLink: 'https://en.wikipedia.org/wiki/Dowry',
+  //   year: 1889,
+  //   tag: [ 'Loving', 'Sharing']
   // },
   // {
-  //   id: 29,
-  //   imageSource: 'images/Hypo_ten_sen_eusplanchnian_(papyros).jpg',
-  //   description: "Earliest known manuscript of Sub tuum praesidium in Greek, dated between 3rd to 4th centuries.",
-  //   sourceLink: 'https://en.wikipedia.org/wiki/Sub_tuum_praesidium',
-  //   year: 400,
-  //   tag: [ 'Praying', 'Healing']
+  //   id: 63,
+  //   imageSource: 'images/Jade_cabbage_closeup.jpg',
+  //   description: "Jadeite Cabbage – Jin received it as part of her dowry for her wedding to Guangxu, in 1889.",
+  //   sourceLink: 'https://en.wikipedia.org/wiki/Dowry',
+  //   year: 1889,
+  //   tag: [ 'Loving', 'Sharing']
   // },
-  // {
-  //   id: 29,
-  //   imageSource: 'images/Hypo_ten_sen_eusplanchnian_(papyros).jpg',
-  //   description: "Earliest known manuscript of Sub tuum praesidium in Greek, dated between 3rd to 4th centuries.",
-  //   sourceLink: 'https://en.wikipedia.org/wiki/Sub_tuum_praesidium',
-  //   year: 400,
-  //   tag: [ 'Praying', 'Healing']
-  // }
 ];
 
-const renderCard = (card) => (
-  <div key={card.id} className="image-card">
-    <img src={card.imageSource} alt="Image" />
-    <p>{card.description}</p>
-    <p className="years" >{card.year} </p>
-    <a className="source-link" href={card.sourceLink} target="_blank">Source</a>
-  </div>
-)
 
 const Cards = ({ cards, orderBy }) => {
+  const [selectedCard, setSelectedCard] = useState(null);
+
   let orderedCards = cards.slice(0);
 
   if (orderBy === "date") {
     orderedCards.sort((a, b) => a.year - b.year);
   }
 
+  const handleCardClick = (card) => {
+    setSelectedCard(card);
+  }
+
+  const handleCloseClick = () => {
+    setSelectedCard(null);
+  }
+
+  const getYearString = (year) => {
+    if (year < 0) {
+      return Math.abs(year) + " BC";
+    } else {
+      return year + " AD";
+    }
+  }
+
   return (
-    <div className="image-grid">
-      {orderedCards.map(renderCard)}
+    <div>
+      {selectedCard && (
+        <div className="modal">
+          <div className="modal-content">
+            <div className="modal-image-text">
+              <img src={selectedCard.imageSource} className="modal-image" alt="Selected Card" />
+              <p className="modal-text"> {selectedCard.description} </p>
+            </div>
+            <p className="modal-years">{getYearString(selectedCard.year)}</p>
+            <a className="modal-link" href={selectedCard.sourceLink} target="_blank">
+              Source
+            </a>
+            <button className="modal-close" onClick={handleCloseClick}>Close</button>
+          </div>
+        </div>
+      )}
+
+      <div className="image-grid">
+        {orderedCards.map((card) => (
+          <div key={card.id} className="image-card" onClick={() => handleCardClick(card)}>
+            <img src={card.imageSource} alt="Image" />
+            <p>{card.description}</p>
+            <p className="years">{getYearString(card.year)}</p>
+            <a className="source-link" href={card.sourceLink} target="_blank">
+              Source
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
+
 
 const HomePage = () => {
   const tags = ['Playing', 'Loving', 'Gathering', 'Cleansing', 'Praying', 'Writing', 'Eating'];
