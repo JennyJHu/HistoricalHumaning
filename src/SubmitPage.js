@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const SubmitPage = () => {
     const [image, setImage] = useState(null);
+    const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [date, setDate] = useState('');
     const [sourceLink, setSourceLink] = useState('');
@@ -20,14 +21,20 @@ const SubmitPage = () => {
     return (
         <>
             <header>
-                <h1> <a className="title" href="./" target="_self"> Historical Humaning</a> </h1>
+                {/* <h1> <a className="title" href="./" target="_self"> Historical Humaning</a> </h1> */}
+
+                <p className="about"> <a className="title" href="./" target="_self"> Historical Humaning Archive</a> is an ongoing collection of humans being historically human. </p>
             </header>
             <div className="submit-page">
                 <h1>Submit a post</h1>
-                <form onSubmit={handleSubmit}>
+                <form className='submit-categories' onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="image">Image:</label>
                         <input type="file" id="image" onChange={handleImageChange} />
+                    </div>
+                    <div>
+                        <label htmlFor="title">Title:</label>
+                        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
                     </div>
                     <div>
                         <label htmlFor="description">Description:</label>
