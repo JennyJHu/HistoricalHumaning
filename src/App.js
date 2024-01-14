@@ -706,7 +706,8 @@ const imagesData = [
     sourceLink: 'https://en.wikipedia.org/wiki/Rotating_bookmark',
     year: -14000,
     dateAdded: '12-01-2024',
-    tag: ['Sharing', 'Writing', 'Praying']
+    tag: ['Sharing', 'Writing', 'Praying'],
+
   },
   // {
   //   id: 69,
