@@ -678,22 +678,106 @@ const imagesData = [
     dateAdded: '11-02-2023',
     tag: ['Cleansing', 'Healing']
   },
+  {
+    id: 66,
+    cardTitle: "B.C.E Egyptians Adored their Cats",
+    imageSource: 'images/SUBMISSION-cat-column.png',
+    description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
+    sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
+    year: -330,
+    dateAdded: '22-12-2023',
+    tag: ['Loving', 'Sharing', 'Praying']
+  },
+  {
+    id: 67,
+    cardTitle: "A Babylonian Dream Tablet on the Interpretation of Dreams",
+    imageSource: 'images/Babylonian-dream-tablet.jpg',
+    description: "A tablet which the Babylonians of the time of Moses, or the Cassite period, wrote down their ideas concerning things seen or done in dreams.",
+    sourceLink: 'https://www.penn.museum/sites/journal/586/',
+    year: -14000,
+    dateAdded: '28-12-2023',
+    tag: ['Sharing', 'Praying', 'Writing']
+  },
+  {
+    id: 68,
+    cardTitle: "Rotating Bookmark",
+    imageSource: 'images/Rotating_bookmark.jpg',
+    description: "Rotating bookmarks were a kind of bookmark used in medieval Europe. They were attached to a string, along which a marker could be slid up and down to mark a precise level on the page. About 30 such rotating bookmarks have been recorded in libraries in continental Europe, and another half a dozen in England.",
+    sourceLink: 'https://en.wikipedia.org/wiki/Rotating_bookmark',
+    year: -14000,
+    dateAdded: '12-01-2024',
+    tag: ['Sharing', 'Writing', 'Praying']
+  },
   // {
-  //   id: 63,
-  //   imageSource: 'images/Jade_cabbage_closeup.jpg',
-  //   description: "Jadeite Cabbage – Jin received it as part of her dowry for her wedding to Guangxu, in 1889.",
-  //   sourceLink: 'https://en.wikipedia.org/wiki/Dowry',
-  //   year: 1889,
-  //   tag: [ 'Loving', 'Sharing']
+  //   id: 69,
+  //   cardTitle: "B.C.E Egyptians Adored their Cats",
+  //   imageSource: 'images/SUBMISSION-cat-column.png',
+  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
+  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
+  //   year: -330,
+  //   dateAdded: '22-12-2023',
+  //   tag: ['Loving', 'Sharing', 'Praying']
   // },
   // {
-  //   id: 63,
-  //   imageSource: 'images/Jade_cabbage_closeup.jpg',
-  //   description: "Jadeite Cabbage – Jin received it as part of her dowry for her wedding to Guangxu, in 1889.",
-  //   sourceLink: 'https://en.wikipedia.org/wiki/Dowry',
-  //   year: 1889,
-  //   tag: [ 'Loving', 'Sharing']
+  //   id: 66,
+  //   cardTitle: "B.C.E Egyptians Adored their Cats",
+  //   imageSource: 'images/SUBMISSION-cat-column.png',
+  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
+  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
+  //   year: -330,
+  //   dateAdded: '22-12-2023',
+  //   tag: ['Loving', 'Sharing', 'Praying']
   // },
+  // {
+  //   id: 66,
+  //   cardTitle: "B.C.E Egyptians Adored their Cats",
+  //   imageSource: 'images/SUBMISSION-cat-column.png',
+  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
+  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
+  //   year: -330,
+  //   dateAdded: '22-12-2023',
+  //   tag: ['Loving', 'Sharing', 'Praying']
+  // },
+  // {
+  //   id: 66,
+  //   cardTitle: "B.C.E Egyptians Adored their Cats",
+  //   imageSource: 'images/SUBMISSION-cat-column.png',
+  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
+  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
+  //   year: -330,
+  //   dateAdded: '22-12-2023',
+  //   tag: ['Loving', 'Sharing', 'Praying']
+  // },
+  // {
+  //   id: 66,
+  //   cardTitle: "B.C.E Egyptians Adored their Cats",
+  //   imageSource: 'images/SUBMISSION-cat-column.png',
+  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
+  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
+  //   year: -330,
+  //   dateAdded: '22-12-2023',
+  //   tag: ['Loving', 'Sharing', 'Praying']
+  // },
+  // {
+  //   id: 66,
+  //   cardTitle: "B.C.E Egyptians Adored their Cats",
+  //   imageSource: 'images/SUBMISSION-cat-column.png',
+  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
+  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
+  //   year: -330,
+  //   dateAdded: '22-12-2023',
+  //   tag: ['Loving', 'Sharing', 'Praying']
+  // },
+  // {
+  //   id: 66,
+  //   cardTitle: "B.C.E Egyptians Adored their Cats",
+  //   imageSource: 'images/SUBMISSION-cat-column.png',
+  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
+  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
+  //   year: -330,
+  //   dateAdded: '22-12-2023',
+  //   tag: ['Loving', 'Sharing', 'Praying']
+  // }
 ];
 
 
