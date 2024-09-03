@@ -709,76 +709,86 @@ const imagesData = [
     tag: ['Sharing', 'Writing', 'Praying'],
 
   },
+  {
+    id: 69,
+    cardTitle: "A guide to lucid dreaming",
+    imageSource: 'images/lesrvesetlesmoye.jpeg',
+    description: "Frontispiece to Les rêves et les moyens de les diriger; observations pratiques (Dreams and the ways to direct them: practical observations) a guide to lucid dreaming published anonymously in 1867, but later identified as the work of Hervey de Saint-Denys. ",
+    sourceLink: 'https://publicdomainreview.org/collection/the-art-of-dreams/',
+    year: 1867,
+    dateAdded: '29-01-2024',
+    tag: ['Gathering', 'Writing', 'Praying']
+  },
+  {
+    id: 70,
+    cardTitle: "Dream Vision; A Nightmare",
+    imageSource: 'images/dreamvision1525.jpg',
+    description: "Dream Vision; A Nightmare (1525), by Albrecht Dürer: a watercolour and accompanying text describing an apocalyptic dream Dürer had on the night of 7-8th June 1525. The text reads: In 1525, during the night between Wednesday and Thursday after Whitsuntide, I had this vision in my sleep, and saw how many great waters fell from heaven. The first struck the ground about four miles away from me with such a terrible force, enormous noise and splashing that it drowned the entire countryside. I was so greatly shocked at this that I awoke before the cloudburst. And the ensuing downpour was huge. Some of the waters fell some distance away and some close by. And they came from such a height that they seemed to fall at an equally slow pace. But the very first water that hit the ground so suddenly had fallen at such velocity, and was accompanied by wind and roaring so frightening, that when I awoke my whole body trembled and I could not recover for a long time. When I arose in the morning, I painted the above as I had seen it. May the Lord turn all things to the best.",
+    sourceLink: 'https://publicdomainreview.org/collection/the-art-of-dreams/',
+    year: 1525,
+    dateAdded: '01-02-2024',
+    tag: ['Sharing', 'Writing', 'Praying']
+  },
+  {
+    id: 71,
+    cardTitle: "Letters to My Sister of our Experiences on Our First Trip to Europe",
+    imageSource: 'images/SUBMISSION-letterstosister1913.png',
+    description: "A book of letters written by a young American girl named Lilian McCarron to her sister detailing a trip she made around Europe in the latter half of 1913, before the First World War.",
+    sourceLink: 'https://publicdomainreview.org/collection/letters-to-my-sister-of-our-experiences-on-our-first-trip-to-europe-1913/',
+    year: 1913,
+    dateAdded: '10-03-2024',
+    tag: ['Loving', 'Sharing', 'Writing']
+  },
+  {
+    id: 72,
+    cardTitle: "The Birthday Gift by Rebecca Solomon",
+    imageSource: 'images/SUBMISSION-birthdayGift.jpg',
+    description: "The Birthday Gift, a painting of the giving of a personal birthday present circa 1886 by Rebecca Solomon. ",
+    sourceLink: 'https://en.wikipedia.org/wiki/The_Dream_of_the_Fisherman%27s_Wife',
+    year: 1886,
+    dateAdded: '01-04-2024',
+    tag: ['Loving', 'Creating']
+  },
+  {
+    id: 73,
+    cardTitle: "The Dream of the Fisherman's Wife by Hokusai",
+    imageSource: 'images/SUBMISSION-Hokusai.jpg',
+    description: "Also known as Girl Diver and Octopi, Diver and Two Octopi, etc., is a woodblock-printed design by the Japanese artist Hokusai. It is included in Kinoe no Komatsu ('Young Pines'), a three-volume book of shunga erotica first published in 1814, and has become Hokusai's most famous shunga design. Playing with themes popular in Japanese art, it depicts a young ama diver entwined sexually with a pair of octopuses. ",
+    sourceLink: 'https://en.wikipedia.org/wiki/The_Dream_of_the_Fisherman%27s_Wife',
+    year: 1814,
+    dateAdded: '21-04-2024',
+    tag: ['Loving', 'Writing']
+  },
+  {
+    id: 74,
+    cardTitle: "Goddess of War Ring",
+    imageSource: 'images/SUBMISSION-Athenaring.jpg',
+    description: "The bronze ring, which dates back to the 2nd or 3rd century AD, likely belonged to a woman or girl from the Roman period. Researchers speculate that the ring might have belonged to a resident of the estate or served as a burial offering in one of the nearby graves.",
+    sourceLink: 'https://www.ancient-origins.net/artifacts-other-artifacts-news-history-archaeology/bronze-athena-ring-israel-0021104',
+    year: 200,
+    dateAdded: '20-06-2023',
+    tag: ['Loving', 'Praying']
+  },
+  {
+    id: 75,
+    cardTitle: "Medieval Game Collection",
+    imageSource: 'images/SUBMISSION-medievalgame.jpg',
+    description: "Chess figure, tile and dice of the 11th/12th century",
+    sourceLink: 'https://uni-tuebingen.de/universitaet/aktuelles-und-publikationen/pressemitteilungen/newsfullview-pressemitteilungen/article/mittelalterliche-spielesammlung-ausgegraben/',
+    year: 1100,
+    dateAdded: '25-06-2024',
+    tag: ['Sharing', 'Playing', 'Gathering']
+  },
   // {
-  //   id: 69,
-  //   cardTitle: "B.C.E Egyptians Adored their Cats",
+  //   id: 72,
+  //   cardTitle: "Medieval Game Collection",
   //   imageSource: 'images/SUBMISSION-cat-column.png',
-  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
-  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
-  //   year: -330,
-  //   dateAdded: '22-12-2023',
-  //   tag: ['Loving', 'Sharing', 'Praying']
+  //   description: "Chess figure, tile and dice of the 11th/12th century",
+  //   sourceLink: 'https://uni-tuebingen.de/universitaet/aktuelles-und-publikationen/pressemitteilungen/newsfullview-pressemitteilungen/article/mittelalterliche-spielesammlung-ausgegraben/',
+  //   year: 1100,
+  //   dateAdded: '25-06-2024',
+  //   tag: ['Loving', 'Sharing', 'Playing', 'Gathering']
   // },
-  // {
-  //   id: 66,
-  //   cardTitle: "B.C.E Egyptians Adored their Cats",
-  //   imageSource: 'images/SUBMISSION-cat-column.png',
-  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
-  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
-  //   year: -330,
-  //   dateAdded: '22-12-2023',
-  //   tag: ['Loving', 'Sharing', 'Praying']
-  // },
-  // {
-  //   id: 66,
-  //   cardTitle: "B.C.E Egyptians Adored their Cats",
-  //   imageSource: 'images/SUBMISSION-cat-column.png',
-  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
-  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
-  //   year: -330,
-  //   dateAdded: '22-12-2023',
-  //   tag: ['Loving', 'Sharing', 'Praying']
-  // },
-  // {
-  //   id: 66,
-  //   cardTitle: "B.C.E Egyptians Adored their Cats",
-  //   imageSource: 'images/SUBMISSION-cat-column.png',
-  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
-  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
-  //   year: -330,
-  //   dateAdded: '22-12-2023',
-  //   tag: ['Loving', 'Sharing', 'Praying']
-  // },
-  // {
-  //   id: 66,
-  //   cardTitle: "B.C.E Egyptians Adored their Cats",
-  //   imageSource: 'images/SUBMISSION-cat-column.png',
-  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
-  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
-  //   year: -330,
-  //   dateAdded: '22-12-2023',
-  //   tag: ['Loving', 'Sharing', 'Praying']
-  // },
-  // {
-  //   id: 66,
-  //   cardTitle: "B.C.E Egyptians Adored their Cats",
-  //   imageSource: 'images/SUBMISSION-cat-column.png',
-  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
-  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
-  //   year: -330,
-  //   dateAdded: '22-12-2023',
-  //   tag: ['Loving', 'Sharing', 'Praying']
-  // },
-  // {
-  //   id: 66,
-  //   cardTitle: "B.C.E Egyptians Adored their Cats",
-  //   imageSource: 'images/SUBMISSION-cat-column.png',
-  //   description: "Possibly from the Ptolemaic Dynasty, this papyrus column with two cats dating back to 305-30 B.C.E. is made of faience. It is a good demonstration of how much Egyptians adored their house cats that statues like this one were made in their likeness..",
-  //   sourceLink: 'https://www.smithsonianmag.com/history/a-brief-history-of-house-cats-158390681/',
-  //   year: -330,
-  //   dateAdded: '22-12-2023',
-  //   tag: ['Loving', 'Sharing', 'Praying']
-  // }
 ];
 
 
